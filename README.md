@@ -2,4 +2,4 @@
 
 ## Agenda
 
-- CoAP in 2 sessions
+- CoAP - 2 Sessions
