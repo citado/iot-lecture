@@ -77,15 +77,14 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Platforms' Components/Services}
-  \begin{block}{}
-    There is \textbf{no specific} standard for platform architecture.
-    Here we use a de-facto standard for having a better arrangement of materials.
-  \end{block}
+  \frametitle{Platforms' Components\footfullcite{Rub2020}}
   \begin{itemize}
-    \item Layer 1
-    \item Layer 2
-    \item Layer 3
+    \item \textbf{\color{Cyan} Applications} processes the gathered environment data, apply data mining and other big data
+      techniques, train complex machine learning models, or keep monitoring the data to support decisions.
+    \item \textbf{\color{YellowOrange} Cloud Server} provides the platform features required for data storage and processing to support
+      the data used by applications.
+    \item \textbf{\color{LimeGreen} IoT Gateway/Fog Server} primarily function as a data relay between IoT Devices and Cloud Server.
+    \item \textbf{\color{RubineRed} IoT Devices} measure the environmental parameters and forward the measures to the gateway or fog server.
   \end{itemize}
 \end{frame}
 
