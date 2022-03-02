@@ -2,6 +2,8 @@
 
 \subtitle{IoT Platforms}
 
+\addbibresource{main.bib}
+
 \begin{document}
 
 \begin{frame}
@@ -15,13 +17,32 @@
 \section{IoT Platforms, What \& Why?}
 
 \begin{frame}
-  \frametitle{Challenges}
+  \frametitle{Challenges\footfullcite{Rub2020}}
   \begin{itemize}
     \item Lack of a common date format and sharing standard.
     \begin{itemize}
       \item Two different sensors can monitor the same parameter using different unit of measure.
     \end{itemize}
     \item Heterogeneity in networking and sensor technologies.
+    \begin{itemize}
+      \item Heterogeneous environment of IoT devices/plaforms that must be integrated into an interoperable one.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Challenges (Cont'd)}
+  \begin{itemize}
+    \item Lack of a standardized definition of environmental indicators.
+    \begin{itemize}
+      \item Standard doesn't consider clear metrics for water quality (i.e., temperature, pH, conductivity, and dissolved oxygen indicators)
+    \end{itemize}
+    \item Semantic interoperability between IoT solutions for the environment domain.
+    \begin{itemize}
+      \item Environmental studies can comprehend many phenomena through the observation/analysis of different features
+        (i.e., earthquake can be predicted by vibrations or satellite image processing).
+      \item A platform for environment studies must model and explore the semantic relation between heterogeneous data sets.
+    \end{itemize}
   \end{itemize}
 \end{frame}
 
@@ -57,5 +78,9 @@
     \item Layer 3
   \end{itemize}
 \end{frame}
+
+%\begin{frame}[allowframebreaks]
+%  \printbibliography%
+%\end{frame}
 
 \end{document}
