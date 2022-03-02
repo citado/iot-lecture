@@ -5,6 +5,7 @@
 \RequirePackage{booktabs}
 \RequirePackage{minted}
 \RequirePackage[useregional,calc,warn=false]{datetime2}
+\RequirePackage[style=numeric,sorting=ynt]{biblatex}
 
 \DTMnewdatestyle{mmyy}{%
   \renewcommand*{\DTMdisplaydate}[4]{\DTMmonthname{##2} ##1}%
