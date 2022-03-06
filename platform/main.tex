@@ -47,6 +47,17 @@
 \end{frame}
 
 \begin{frame}
+  \frametitle{Challenges (Cont'd)\footfullcite{Vresk2016}}
+  \begin{itemize}
+    \item Scalability
+    \begin{itemize}
+      \item The rapid development of technology enabled ubiquitous connectivity resuluting in a continues growth of a number of connected devices.
+      \item In order to handle the growing amount of work, such as demand spikes, it is essential to implement scalability mechanisms and strategies that will maintain the system stability.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
   \frametitle{What is an IoT platform?}
   \begin{block}{Internet of Things Wiki\footfullcite{Top20IoTPlatforms}}
     In simple words the purpose of any \textbf{\color{YellowOrange} IoT device} is to connect with
@@ -135,6 +146,53 @@
   \begin{figure}
     \includegraphics[width=\textwidth]{./img/platform.png}
   \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Scalability}
+  \begin{itemize}
+    \item There are two basic strategies for scaling:
+    \begin{itemize}
+      \item \textbf{\color{RubineRed} Vertical}: Adding additional resources to a single processing node.
+      \item \textbf{\color{Cyan} Horizontal}: Adding more nodes to the overall system.
+    \end{itemize}
+    \item Opposite to vertical scaling, horizontal scaling represents a set of design practices and
+      planned activities leading to an inherent distribution within the system.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{IoT Platform based on Microservices\footfullcite{Vresk2016}}
+  \begin{itemize}
+    \item To address the scalability and interoperability
+    \item Define IoT concepts and platform based on orchestration of different IoT system components
+    \item implemented in the form of microservices
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{IoT Platform based on Microservices\footfullcite{Vresk2016} (Cont'd)}
+  \begin{itemize}
+    \item The \textsc{\color{YellowOrange} microservices} approach
+    \begin{itemize}
+      \item A relatively \textit{\color{LimeGreen} new term} in the software architecture pattern
+      \item Present one of the solutions to the scalability problem in the IoT doamin
+      \item Organizing distributed applications as a suite of services
+      \item Each service is running in its own independent process context
+        is designed to segregate one from service from another
+    \end{itemize}
+    \item Internal cross-service communication is implemented through proprietary interfaces
+    \begin{itemize}
+      \item relying on lightweight TCP/UDP-based application protocols.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{IoT Platform based on Microservices\footfullcite{Vresk2016} (Cont'd)}
+  \begin{itemize}
+    \item Possibility to independently \textbf{\color{YellowOrange} deploy} and \textbf{\color{LimeGreen} scale} each service
+  \end{itemize}
 \end{frame}
 
 \section{SenML}
