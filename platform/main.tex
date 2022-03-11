@@ -201,7 +201,16 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Interactions\footfullcite{Vresk2016}}
+  \frametitle{Traffic Patterns}
+  \begin{itemize}
+    \item Periodic
+    \item Event Triggered
+    \item Self Triggered
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Microservices Interactions\footfullcite{Vresk2016}}
   \begin{itemize}
     \item Interactions among different microservices are restricted to data exchange using only microservice-exposed interfaces.
   \end{itemize}
@@ -258,10 +267,32 @@
 
 \begin{frame}
   \frametitle{Device}
+  \begin{itemize}
+    \item A hardware component
+    \item Connected to \textit{\color{RubineRed} Actuators} and/or \textit{\color{YellowOrange} Sensors} wires or wirelessly or even integrates these components.
+    \item Process data from \textit{\color{YellowOrange} Sensors}
+    \item Control \textit{\color{RubineRed} Actuators}
+    \item Typically software in the form of \textbf{\color{Purple} Drivers} is required
+    \item Devices are the entry point of the physical environment to the digital world
+    \item Devices are:
+    \begin{enumerate}
+      \item Self-Contained and build a black box of functionality
+      \item Connected to another system e.g.\ to an IoT Integration Middleware
+    \end{enumerate}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Gateway}
+  \begin{itemize}
+    \item Devices are connected to a \textit{\color{Cyan} Gateway} in cases when the \textit{\color{LimeGreen} Devices} is not capable of directly connecting to further systems.
+    \begin{itemize}
+      \item Communication forwarding
+      \item Protocol translation
+    \end{itemize}
+    \item Gateways must support communication protocols and technologies in both direction
+    \item May already execute some data processing functions such as data aggregation, depending on its processing capabilities.
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
