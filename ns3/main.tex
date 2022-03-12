@@ -12,4 +12,65 @@
   \tableofcontents{}
 \end{frame}
 
+\section{Introduction}
+
+\begin{frame}
+  \frametitle{NS3}
+  \begin{itemize}
+    \item Discrete-event Simulator
+    \item Typically run from command line
+    \item Written in C++, not in a high-level modeling language
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{NS3 (Cont'd)}
+  \begin{itemize}
+    \item The \textit{\color{YellowOrange} main()} program is where the specific simulation scenario configuration
+      is performed and where the simulator is run and stooped.
+    \item Most users end up editing and having to rebuild the \textit{ns-3} libraries themselves,
+      so having the source code available is more convenient.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{NS3 Installation}
+  \begin{itemize}
+    \item Most beginning users need not concern themselves if their configuration reports some missing
+      optional features of \textit{ns-3}.
+  \end{itemize}
+  \begin{table}
+    \begin{tabular}{cp{.7\textwidth}}
+      Prerequisite &
+      Package/Version \\
+
+      C++ compiler &
+      \textit{clang++} or \textit{g++} (g++ version 7 or greater) \\
+
+      Python &
+      \textit{python3} version $\geq$ 3.6 \\
+
+      Git &
+      any recent version (to access \textit{ns-3} from \href{https://github.com/nsnam/ns-3-dev-git}{Github.com}) \\
+
+      tar &
+      any recent version (to unpack an ns-3 release) \\
+
+      bunzip2 &
+      any recent version (to uncompress an ns-3 release) \\
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+\begin{frame}
+  \frametitle{NS3 Installation (Cont'd)}
+  \begin{minted}{console}
+> cd
+> mkdir workspace
+> cd workspace
+> wget https://www.nsman.org/release/ns-allinone-3.35.tar.bz2
+> tar xjf ns-allinone-3.35.tar.bz2
+  \end{minted}
+\end{frame}
+
 \end{document}
