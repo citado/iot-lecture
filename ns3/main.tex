@@ -115,8 +115,13 @@ int main(int argc, char *argv[]) {
 \begin{frame}
   \frametitle{Use Linux Containers to set up virtual networks (Cont'd)}
   \begin{itemize}
-    \item The dotted-dashed lines demark the containers and the host OS
-    \item These net devices are actually connected to Linux bridges that form the connection to the host OS
+    \item The dotted-dashed lines demark the containers and the host OS\@.
+    \item These net devices are actually connected to Linux bridges that form the connection to the host OS\@.
+    \item  There is a tap device also connected to each of these bridges.
+    \begin{itemize}
+      \item These tap devices bring the packets flowing through them into user space where ns-3 can get hold of them.
+      \item A special ns-3 NetDevice attaches to the network tap and passes packets on to an ns-3 \textbf{ghost node}.
+    \end{itemize}
   \end{itemize}
 \end{frame}
 
