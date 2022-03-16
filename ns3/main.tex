@@ -64,6 +64,7 @@
 
 \begin{frame}[fragile]
   \frametitle{NS3 Installation (Cont'd)}
+  \scriptsize
   \begin{minted}{console}
 > cd
 > mkdir workspace
@@ -71,6 +72,52 @@
 > wget https://www.nsman.org/release/ns-allinone-3.35.tar.bz2
 > tar xjf ns-allinone-3.35.tar.bz2
   \end{minted}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{First Network}
+  \scriptsize
+  \begin{minted}{cpp}
+using namespace ns3;
+
+int main(int argc, char *argv[]) {
+  Time::SetResolution(Time::NS);
+
+  NodeContainer nodes;
+  nodes.Create(2);
+
+  PointToPointHelper pointToPoint;
+  pointToPoint.SetDeviceAttribute("DataRate", StringValue("5Mbps"));
+  pointToPoint.SetChannelAttribute("Delay", StringValue("2ms"));
+
+  NetDeviceContainer devices;
+  devices = pointToPoint.Install(nodes);
+
+  InternetStackHelper stack;
+  stack.Install(nodes);
+
+  // ...
+
+  Simulator::Run();
+  Simulator::Destroy();
+  return 0;
+}
+  \end{minted}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Use Linux Containers to set up virtual networks}
+  \begin{figure}
+    \includegraphics[height=.8\textheight]{./img/container_and_ns3_bd.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Use Linux Containers to set up virtual networks (Cont'd)}
+  \begin{itemize}
+    \item The dotted-dashed lines demark the containers and the host OS
+    \item These net devices are actually connected to Linux bridges that form the connection to the host OS
+  \end{itemize}
 \end{frame}
 
 \end{document}
