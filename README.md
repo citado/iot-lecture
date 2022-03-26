@@ -1,2 +1,3 @@
-# report
-a description about an ideal platform [in persian]
+# Report
+
+Describe platform structure and components features and responsibilities.
