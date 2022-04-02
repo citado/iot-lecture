@@ -1,4 +1,4 @@
-\ProvidesClass{report}
+\ProvidesClass{reports}
               [Parham Alvani's reports for iot labratory]
 
 \RequirePackage[dvipsnames]{xcolor}
