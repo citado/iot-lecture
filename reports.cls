@@ -36,7 +36,7 @@
 \renewcommand{\maketitle}{%
   \begin{center}
     \textit{بسمه تعالی}\\[0.5cm]
-  {\huge راهنمای \@title}\\[0.5cm]
+  {\huge \@title}\\[0.5cm]
   \end{center}
 }
 
