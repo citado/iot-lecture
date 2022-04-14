@@ -3,6 +3,7 @@
 
 \RequirePackage[dvipsnames]{xcolor}
 \RequirePackage{booktabs}
+\RequirePackage{graphicx}
 \RequirePackage{enumerate}
 \RequirePackage{minted}
 \RequirePackage{tabularx}
